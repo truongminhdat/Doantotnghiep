@@ -2,8 +2,11 @@ import { gql } from 'apollo-server'
 
 export default gql`
   type Mutation {
-    signupUser(data: UserCreateInput!): AuthPayload!
     signupLocalUser(data: UserCreateInput!): AuthPayload!
+    Login(email: String!, password: String!): AuthPayload!
+    resetPasswordRequest(email: String!): PasswordResetRequestPayload!
+    resetPassword(token: String!, password: String!): User!
+    
   }
 
   type Query {
@@ -20,6 +23,9 @@ export default gql`
     token: String
     user: User
   }
+  type PasswordResetRequestPayload {
+  email: String!
+}
   input UserCreateInput {
     email: String!
     name: String

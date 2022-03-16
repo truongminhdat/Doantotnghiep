@@ -1,0 +1,22 @@
+{
+	"info": {
+		"_postman_id": "3824f9e8-80d7-447a-8fd5-767ba71260ba",
+		"name": "Doan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth-core",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
